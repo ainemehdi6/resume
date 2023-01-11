@@ -20,9 +20,8 @@
 
                                 // si la validation des données attendues existe
                                 if (
-                                    !isset($_POST['nom']) ||
+                                    !isset($_POST['name']) ||
                                     !isset($_POST['number']) ||
-                                    !isset($_POST['prenom']) ||
                                     !isset($_POST['email']) ||
                                     !isset($_POST['commentaire'])
                                 ) {
@@ -31,7 +30,7 @@
                                         ' problème.'
                                     );
                                 }
-                                $nom = $_POST['nom']; // required
+                                $nom = $_POST['name']; // required
                                 $prenom = $_POST['prenom']; // required
                                 $email = $_POST['email']; // required
                                 $commentaire = $_POST['commentaire']; // required
@@ -68,7 +67,6 @@
 
                                 $email_message = "Détail.\n\n";
                                 $email_message .= "Nom: " . $nom . "\n";
-                                $email_message .= "Prenom: " . $prenom . "\n";
                                 $email_message .= "Email: " . $email . "\n";
                                 $email_message .= "Commentaire: " . $commentaire . "\n";
 
