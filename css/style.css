@@ -643,7 +643,7 @@ h6 {
     width: auto;
 }
 
-.aali_tm_button.border button {
+.aali_tm_button.border a {
     background-color: transparent;
     color: #15111e;
 }
@@ -651,8 +651,7 @@ h6 {
 .aali_tm_button.border .svg {
     color: #962243;
 }
-
-.aali_tm_button button {
+.aali_tm_button a {
     text-decoration: none;
     color: #fff;
     font-family: "Josefin Sans";
@@ -688,6 +687,67 @@ h6 {
     color: #fff;
 }
 
+.aali_tm_button.border button:hover {
+    background-color: #962243;
+    color: #fff;
+}
+
+.aali_tm_button.border button:hover .svg {
+    color: #fff;
+}
+
+.aali_tm_button button .svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    margin-left: 9px;
+    margin-top: -2px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.aali_tm_button a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Josefin Sans";
+    display: inline-block;
+    background-color: #962243;
+    font-weight: 700;
+    position: relative;
+    padding: 15px 73px 15px 46px;
+    border-radius: 6px;
+    border: 2px solid #962243;
+    white-space: nowrap;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.aali_tm_button a:hover {
+    background-color: transparent;
+    color: #15111e;
+}
+
+.aali_tm_button a:hover .svg {
+    color: #15111e;
+}
+
+.aali_tm_hero .aali_tm_button a:hover .svg {
+    color: #fff;
+}
+
+.aali_tm_hero .aali_tm_button a:hover {
+    color: #fff;
+}
+
 .aali_tm_button.border a:hover {
     background-color: #962243;
     color: #fff;
@@ -697,6 +757,21 @@ h6 {
     color: #fff;
 }
 
+.aali_tm_button a .svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    margin-left: 9px;
+    margin-top: -2px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 .aali_tm_button button .svg {
     position: absolute;
     top: 50%;
@@ -3176,6 +3251,9 @@ input[type="number"] {
     .aali_tm_hero .cd-headline b {
         font-size: 35px;
     }
+    .aali_tm_button a {
+        padding: 10px 62px 9px 35px;
+    }
     .aali_tm_button button {
         padding: 10px 62px 9px 35px;
     }
@@ -3185,6 +3263,10 @@ input[type="number"] {
     .aali_tm_hero .hero_buttons {
         margin-top: 25px;
         margin-bottom: 45px;
+    }
+    .aali_tm_button a .svg {
+        width: 16px;
+        height: 16px;
     }
     .aali_tm_button button .svg {
         width: 16px;
